@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#fbfaf4" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      ;(function () {
+        try {
+          var theme = localStorage.getItem('portfolio-theme')
+          if (theme !== 'dark' && theme !== 'light') theme = 'light'
+          document.documentElement.setAttribute('data-theme', theme)
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', theme === 'dark' ? '#121110' : '#fbfaf4')
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      })()
+    </script>
+
+    <title>Wogenie Liyew | AI/ML Engineer & Applied AI Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Wogenie Liyew — AI/ML Engineer building intelligent systems across machine learning, deep learning, computer vision, NLP, RAG, AI agents, and data engineering."
+    />
+    <meta name="author" content="Wogenie Liyew" />
+    <link rel="canonical" href="https://wogenie.github.io/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Wogenie Liyew" />
+    <meta property="og:title" content="Wogenie Liyew | AI/ML Engineer & Applied AI Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Wogenie Liyew — AI/ML Engineer building intelligent systems across machine learning, deep learning, computer vision, NLP, RAG, AI agents, and data engineering."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wogenie Liyew | AI/ML Engineer & Applied AI Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Wogenie Liyew — AI/ML Engineer building intelligent systems across machine learning, deep learning, computer vision, NLP, RAG, AI agents, and data engineering."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Wogenie Liyew",
+        "jobTitle": "AI/ML Engineer & Applied AI Developer",
+        "email": "mailto:wogenieliyewsenay@gmail.com",
+        "url": "https://wogenie.github.io/",
+        "sameAs": ["https://github.com/Wogenie"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
